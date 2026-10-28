@@ -1,12 +1,16 @@
 let peso = prompt("Digite seu peso(Kg): ")
 let altura = prompt("Digite sua altura(m): ")
+GerarRelatorio(peso, altura)
+
 
 let imc = calcularIMC(peso, altura)
 alert(imc)
 
+
 function calcularIMC(peso, altura){
     return peso / (altura * altura) 
 }
+
 
 function classificarIMC(imc){
     if(imc >= 40) {
@@ -22,4 +26,9 @@ function classificarIMC(imc){
     } else if(imc <=18,5) {
         alert("baixo peso")
     }
+}
+
+function GerarRelatorio(peso, altura) {
+    let imc = calcularIMC(peso, altura)
+    classificarIMC(imc)
 }
