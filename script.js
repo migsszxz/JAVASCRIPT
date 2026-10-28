@@ -14,17 +14,17 @@ function calcularIMC(peso, altura){
 
 function classificarIMC(imc){
     if(imc >= 40) {
-        alert("obesidade grau III")
-    } else if(imc >=35,0 && imc <= 39,9) {
-        alert("obesidade grau II")
-    } else if(imc >=30,0 && imc <= 34,9) {
-        alert("obesidade grau I")
-    } else if(imc >=25,0 && imc <= 29,9) {
-        alert("sobrepeso")
-    } else if(imc >=18,5 && imc <= 24,9) {
-        alert("peso adequado")
-    } else if(imc <=18,5) {
-        alert("baixo peso")
+        alert("obesidade grau 3: " + imc)
+    } else if(imc >=35) {
+        alert("obesidade grau 2: " + imc)
+    } else if(imc >=30) {
+        alert("obesidade grau 1: " + imc)
+    } else if(imc >=25) {
+        alert("sobrepeso: " + imc)
+    } else if(imc >=18,5) {
+        alert("peso adequado: " + imc)
+    } else {
+        alert("baixo peso: " + imc)
     }
 }
 
